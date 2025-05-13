@@ -1,0 +1,22 @@
+{
+	"name": "Basic認証 セレクター",
+	"version": "1.0.0",
+	"manifest_version": 3,
+	"description": "保存したBasic認証情報を一覧から選んで簡単にアクセスできる拡張機能です。",
+	"permissions": ["storage", "tabs", "scripting"],
+	"host_permissions": ["<all_urls>"],
+	"action": {
+		"default_popup": "popup.html",
+		"default_icon": "icon.png"
+	},
+	"background": {
+		"service_worker": "background.js"
+	},
+	"icons": {
+		"16": "icon16.png",
+		"48": "icon48.png",
+		"128": "icon128.png"
+	},
+	"author": "inexio@TAKAHIRO",
+	"homepage_url": "https://inexio.jp"
+}

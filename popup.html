@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>basic-select</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Basic認証 選択</h2>
+
+  <div id="add-form" style="display:none;">
+    <input type="hidden" id="edit-index">
+    <input type="text" placeholder="ラベル" id="label"><br>
+    <input type="text" placeholder="URL（省略可）" id="url"><br>
+    <input type="text" placeholder="ユーザー名" id="username"><br>
+    <input type="password" placeholder="パスワード" id="password"><br>
+    <button id="save-btn">保存</button>
+    <button id="cancel-btn" style="margin-left: 5px;">キャンセル</button>
+    <hr>
+  </div>
+
+  <button id="add-btn">＋新規追加</button>
+  <div id="auth-list"></div>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>
