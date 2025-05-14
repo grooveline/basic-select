@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
   <meta charset="UTF-8">
-  <title>basic-select</title>
-  <link rel="stylesheet" href="style.css">
+  <title id="html-title">Basic認証 セレクター</title>
+  <link rel="stylesheet" href="style.min.css">
 </head>
 <body>
-  <h2>Basic認証 選択</h2>
+  <div id="box--header">
+    <h1 id="main-heading">Basic認証 選択</h1>
+    <button id="add-btn">➕新規追加</button>
+  </div>
 
   <div id="add-form" style="display:none;">
     <input type="hidden" id="edit-index">
@@ -19,10 +22,13 @@
     <hr>
   </div>
 
-  <button id="add-btn">＋新規追加</button>
   <div id="auth-list"></div>
 
-  <script src="popup.js"></script>
+  <div id="box--footer">
+    <p class=""><a href="https://inexio.jp" target="_blank">inexio.jp</a></p>
+  </div>
+
+  <script src="popup.min.js"></script>
 </body>
 
 </html>

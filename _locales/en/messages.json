@@ -1,0 +1,29 @@
+{
+  "extension_name": {
+    "message": "Basic Authentication Selector"
+  },
+  "extension_description": {
+    "message": "Chrome extension for selecting and applying saved Basic Auth credentials."
+  },
+  "main_heading": {
+    "message": "Basic Auth Selection"
+  },
+  "add_button": {
+    "message": "Add New"
+  },
+  "save_button": {
+    "message": "Save"
+  },
+  "cancel_button": {
+    "message": "Cancel"
+  },
+  "auth_button": {
+    "message": "Auth Access"
+  },
+  "edit_button": {
+    "message": "Edit"
+  },
+  "delete_button": {
+    "message": "Delete"
+  }
+}

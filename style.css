@@ -1,7 +1,8 @@
 body {
   font-family: sans-serif;
-  padding: 10px;
-  width: 280px;
+  padding: 8px 12px;
+  width: 300px;
+  font-size: 14px;
 }
 
 input {
@@ -20,7 +21,7 @@ button {
 }
 
 .button-row {
-  display: flex;
+  display: flex; 
   gap: 5px;
   margin-top: 5px;
 }
@@ -32,4 +33,24 @@ button {
 
 .button-row button:first-child {
   flex: 3;
+}
+
+#box--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#box--header h1 {
+  font-size: 1.0rem;
+}
+#add-btn {
+  font-size: 0.85em;
+}
+#box--footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#box--footer p {
+  margin: 0;
 }

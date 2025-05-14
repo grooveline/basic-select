@@ -1,0 +1,29 @@
+{
+  "extension_name": {
+    "message": "Basic認証 セレクター"
+  },
+  "extension_description": {
+    "message": "保存したBasic認証情報を簡単に使えるChrome拡張機能"
+  },
+  "main_heading": {
+    "message": "Basic認証 選択"
+  },
+  "add_button": {
+    "message": "＋新規追加"
+  },
+  "save_button": {
+    "message": "保存"
+  },
+  "cancel_button": {
+    "message": "キャンセル"
+  },
+  "auth_button": {
+    "message": "認証アクセス"
+  },
+  "edit_button": {
+    "message": "編集"
+  },
+  "delete_button": {
+    "message": "削除"
+  }
+}

@@ -1,3 +1,10 @@
+document.getElementById('save-btn').textContent = chrome.i18n.getMessage("save_button");
+document.getElementById('cancel-btn').textContent = chrome.i18n.getMessage("cancel_button");
+document.getElementById('add-btn').textContent = chrome.i18n.getMessage("add_button");
+document.title = chrome.i18n.getMessage("extension_name");
+document.getElementById('html-title').textContent = chrome.i18n.getMessage("extension_name");
+document.getElementById('main-heading').textContent = chrome.i18n.getMessage("main_heading");
+
 function loadList() {
   chrome.storage.local.get({auths: []}, (data) => {
     const list = document.getElementById('auth-list');
@@ -14,18 +21,22 @@ function loadList() {
       const buttonRow = document.createElement('div');
       buttonRow.className = 'button-row';
 
+
       const goBtn = document.createElement('button');
-      goBtn.textContent = '▶ 認証アクセス';
+      goBtn.textContent = '🌐 ' + chrome.i18n.getMessage("auth_button");
+
       goBtn.onclick = () => applyAuth(entry.username, entry.password, entry.url);
       buttonRow.appendChild(goBtn);
 
       const editBtn = document.createElement('button');
-      editBtn.textContent = '✏ 編集';
+      editBtn.textContent = '✏️ ' + chrome.i18n.getMessage("edit_button");
+
       editBtn.onclick = () => openEditForm(index, entry);
       buttonRow.appendChild(editBtn);
 
       const deleteBtn = document.createElement('button');
-      deleteBtn.textContent = '🗑 削除';
+      deleteBtn.textContent = '🗑 ' + chrome.i18n.getMessage("delete_button");
+
       deleteBtn.onclick = () => deleteEntry(index);
       buttonRow.appendChild(deleteBtn);
 
@@ -94,10 +105,8 @@ document.getElementById('save-btn').onclick = () => {
 
   chrome.storage.local.get({auths: []}, (data) => {
     if (editIndex !== '') {
-      // 編集モード
       data.auths[parseInt(editIndex)] = {label, url, username, password};
     } else {
-      // 新規追加モード
       data.auths.push({label, url, username, password});
     }
 
