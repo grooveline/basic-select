@@ -5,7 +5,7 @@
   "manifest_version": 3,
   "default_locale": "ja",
   "author": "Takahiro Tanaka",
-  "homepage_url": "https://inexio.jp",
+  "homepage_url": "https://inexio.jp/inxresults/basic-select/",
   "permissions": [
     "storage",
     "tabs",
