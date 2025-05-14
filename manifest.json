@@ -6,14 +6,8 @@
   "default_locale": "ja",
   "author": "Takahiro Tanaka",
   "homepage_url": "https://inexio.jp/inxresults/basic-select/",
-  "permissions": [
-    "storage",
-    "tabs",
-    "scripting"
-  ],
-  "host_permissions": [
-    "<all_urls>"
-  ],
+  "permissions": ["storage", "tabs", "scripting", "activeTab"],
+  "host_permissions": [],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
