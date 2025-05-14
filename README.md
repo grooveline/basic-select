@@ -35,8 +35,8 @@
 
 ## 🔗 公開ページ・詳細
 
-- 公式ページ：https://inexio.jp/tools/basic-select  
-- Chrome Web Store（準備中）  
+- 公式ページ：https://inexio.jp/inxresults/basic-select/
+- Chrome Web Store（準備中） 
 - GitHubリポジトリ：https://github.com/grooveline/basic-select
 
 ## 🛠 今後の予定
